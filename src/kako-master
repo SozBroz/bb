@@ -16,11 +16,16 @@ import kako
 
 def run_processor(destination=None, configuration=None, results=None):
     ''' Attempts to run the given results processor, returning the process. '''
+    print("Entered run_processor\n")
+    print("\tdestination: " + destination)
+    print("\tconfiguration: " + configuration)
+    print("\tresults: " + results)
     executor = getattr(kako.processor, destination).Processor(
         configuration=configuration,
         results=results
     )
     executor.start()
+    print("Exitted run_processor\n\n")
     return executor
 
 def run_simulation(manifest=None, configuration=None, results=None):
