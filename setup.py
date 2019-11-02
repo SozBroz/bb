@@ -39,7 +39,7 @@ setup(
     install_requires=[
         'click==6.6',
         'boto3==1.4.1',
-        'PyYAML==3.12',
+        'PyYAML==5.1',
         'requests==2.11.1',
         'cerberus==1.0.1',
     ]
